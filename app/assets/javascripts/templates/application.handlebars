@@ -1,0 +1,12 @@
+<h1>Ember Blog</h1>
+<div>
+  {{#if signedIn}}
+  {{#link-to 'sign_out'}}Sign Out{{/link-to}}
+{{else}}
+  {{#link-to 'sign_in'}}Sign In{{/link-to}}
+{{/if}}
+</div>
+
+<div>
+   {{outlet}}
+</div>
